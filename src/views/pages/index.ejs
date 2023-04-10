@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <%- include('../partials/head') %>
+
+  <body class="flex h-screen flex-col text-gray-800">
+    <%- include('../partials/header') %>
+
+    <main class="mx-auto mt-52 flex w-11/12 max-w-6xl flex-1 justify-between">
+      <section id="section-text" class="max-w-lg">
+        <h1 class="mb-4 text-3xl font-bold text-green-500">
+          Bem-vindo ao "Cãopanheiro"!
+        </h1>
+
+        <p class="mb-4 font-bold opacity-90">
+          Nosso site é um espaço dedicado à adoção de cachorros, com o objetivo
+          de promover a adoção responsável e ajudar animais de estimação que
+          precisam de um novo lar.
+        </p>
+
+        <p class="text-lg font-light opacity-90">
+          Aqui você encontrará diversos cães que foram resgatados das ruas ou
+          que precisaram ser doados por seus tutores anteriores, e que estão
+          esperando por uma nova família amorosa e comprometida.
+        </p>
+
+        <div class="mt-4 flex items-center gap-1">
+          <a class="text-lg font-bold text-green-500" href="/adotar"
+            >Conheçam os doguinhos</a
+          >
+          <i class="ph ph-arrow-right text-2xl font-bold"></i>
+        </div>
+      </section>
+
+      <section id="section-image" class="-mt-20">
+        <img class="w-500px" src="/assets/image-3.svg" alt="" />
+      </section>
+    </main>
+
+    <%- include('../partials/footer') %>
+  </body>
+</html>
