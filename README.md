@@ -1,6 +1,6 @@
-# RocketCoffee
+# Cãopanheiro
 
-![Logo do projeto](./src/assets/logo-mobile.svg)
+![Logo do projeto](.github/logo.png)
 
 <hr>
 <p align="center">
