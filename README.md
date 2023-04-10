@@ -83,7 +83,7 @@ Tecnologias usadas no projeto:
 
 ![Github](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 
-## Autores
+## 👨‍💻 Autores
 
 <img width="100" src="https://avatars.githubusercontent.com/u/74840490?v=4">
 
