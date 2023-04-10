@@ -15,49 +15,51 @@
 
 ## 📽 Sobre o Projeto
 
-Descrição do projeto.
+Projeto para ajudar cãozinhos abandonados ou cãozinhos que estão sendo doados pelos seus donos.
 
 ## 🌄 Layout
 
-<div style="display:flex; align-items: flex-start; justify-content: space-between;">
-<img width="200px" src=".github/mobile.png" alt="Imagem do projeto Mobile" title="Projeto Mobile"/>
-<img width="400px" src=".github/preview.png" alt="Imagem do projeto Web" title="Projeto Web"/>
+<div>
+<img width="100%" src=".github/web1.png" alt="Imagem do projeto Web" title="Projeto Web"/>
+<img width="100%" src=".github/web2.png" alt="Imagem do projeto Web" title="Projeto Web"/>
 </div>
 
 ## 🎬 Demonstração
 
-- [Link demonstração](https://coffee-steel.vercel.app/)
+- [Link demonstração]()
 
 ## 📱 Funcionalidades
 
-- [x] Layout responsivo
-- [x] Menu mobile
+- [x] Cadastramento de cães para doação
+- [x] Lista de cães para doação
+- [x] Bando de dados
 
 ## 💿 Como Rodar
 
-<!-- Este projeto é divido em duas partes:
+Este projeto é divido em duas partes:
 
-Backend
-Frontend
-bulbFrontend precisa que o Backend esteja sendo executado para funcionar.
+- Backend
+- Frontend
+
+Frontend precisa que o Backend esteja sendo executado para funcionar.
 
 Pré-requisitos
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas: [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/). Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/).
 
-Rodando o Frontend e o Backend (servidor) -->
+Rodando o Frontend e o Backend (servidor)
 
 ```bash
 # No terminal, clone o repositório
-git clone https://github.com/brunogoncalvesferreira/desafios-rocketseat-discover/tree/main/desafio13-rocketCoffee
+git clone https://github.com/brunogoncalvesferreira/adoption-dogs.git
 
 # Acesse a pasta do projeto no terminal/cmd
-cd desafio13-rocketCoffee
+cd adoption-dogs
 
 # Instale as dependências
 npm install
 
 # Execute a aplicação
-npm run dev
+npm start
 
 # O servidor iniciará na porta: 3000, acesse:
 http://localhost:3000
@@ -67,17 +69,19 @@ http://localhost:3000
 
 Tecnologias usadas no projeto:
 
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+
 ![Javascript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
-![Reactjs](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white)
 
 ![html](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
 ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 
 ![Github](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
-
-![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
 
 ## Autores
 
