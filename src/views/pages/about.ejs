@@ -2,24 +2,23 @@
 <html lang="pt-br">
   <%- include('../partials/head') %>
 
-  <body class="flex h-screen flex-col text-gray-800">
+  <body>
     <%- include('../partials/header') %>
 
-    <main class="mx-auto mt-52 w-11/12 max-w-6xl flex-1">
-      <h1 class="mb-6 text-3xl font-bold text-green-500">
-        Tudo sobre a Cãopanheiro
+    <main class="mx-auto mt-32 h-auto w-11/12 max-w-6xl flex-1">
+      <h1 class="mt-40 max-w-lg text-3xl font-bold text-blue-500">
+        Tudo sobre a CãoPanheiro
       </h1>
-
-      <div class="flex justify-between">
-        <div class="max-w-2xl">
-          <p class="mb-8">
-            Bem-vindo ao Cãopanheiro, uma página dedicada à adoção de cachorros.
+      <div class="flex items-center gap-5">
+        <div class="max-w-xl">
+          <p class="mt-5 text-gray-800">
+            Bem-vindo ao CãoPanheiro, uma página dedicada à adoção de cachorros.
             Nós acreditamos que todos os cães merecem um lar amoroso e
             responsável, e estamos aqui para ajudar a promover a adoção
             consciente e facilitar o processo de adoção.
           </p>
 
-          <p class="mb-8">
+          <p class="mt-5 text-gray-800">
             Em nossa página, você encontrará diversos cachorros disponíveis para
             adoção, cada um com sua própria história e personalidade única.
             Todos os cães que divulgamos foram resgatados das ruas ou de
@@ -27,14 +26,14 @@
             onde possam ser amados e cuidados.
           </p>
 
-          <p class="mb-8">
+          <p class="mt-5 text-gray-800">
             Além de ajudar a encontrar um novo companheiro de quatro patas, o
             Cãopanheiro também oferece informações e dicas úteis sobre cuidados
             com animais de estimação, como alimentação, saúde, higiene e
             bem-estar.
           </p>
 
-          <p class="mb-8">
+          <p class="mt-5 text-gray-800">
             Nós estamos comprometidos com a causa da adoção responsável e
             trabalhamos em parceria com ONGs e protetores de animais para
             garantir que todos os cachorros em nosso site sejam tratados com
@@ -42,14 +41,23 @@
             e contribuir para um mundo melhor para os animais.
           </p>
 
-          <p class="mb-8">
+          <p class="mt-5 text-gray-800">
             Não perca a oportunidade de encontrar o seu novo melhor amigo aqui
             no Cãopanheiro. Adote um cachorro e descubra o amor incondicional
             que só um cão pode oferecer!
           </p>
         </div>
-        <div>
-          <img src="/assets/image-2.svg" alt="Imagem de um cachorro" />
+
+        <div class="relative">
+          <div
+            class="after::content=[''] after:absolute after:-top-8 after:left-14 after:-z-10 after:h-80 after:w-full after:rounded-2xl after:bg-blue-500"
+          >
+            <img
+              class="mt-8 rounded-2xl"
+              src="/assets/image4.jpg"
+              alt="Imagem de um cachorro"
+            />
+          </div>
         </div>
       </div>
     </main>

@@ -15,7 +15,7 @@
 
 ## 📽 Sobre o Projeto
 
-Projeto para ajudar cãozinhos abandonados ou cãozinhos que estão sendo doados pelos seus donos.
+Projeto para ajudar cãozinhos abandonados ou cãozinhos que precisam de um novo lar.
 
 ## 🌄 Layout
 

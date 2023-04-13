@@ -1,29 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <%- include('../partials/head') %>
   <body class="flex h-screen flex-col">
     <%- include('../partials/header') %>
 
-    <main class="mx-auto mt-40 w-11/12 max-w-6xl flex-1">
-      <h1 class="text-3xl font-bold text-green-500">
-        Veja os cãozinhos disponiveis
-      </h1>
+    <main>
+      <h1>Escolha seu melhor amigo 🐶</h1>
 
-      <div class="mt-12 grid grid-cols-4 gap-4">
+      <div>
         <% dogs.forEach(dog => { %>
-        <div
-          class="mt-8 h-auto cursor-pointer rounded-md bg-green-500 p-2 shadow-lg transition hover:scale-110"
-        >
-          <img
-            class="-mt-10 h-32 w-32 rounded-full border border-green-500 object-cover"
-            src="<%- dog.photo %>"
-            alt="<%- dog.name %>"
-          />
-          <strong class="mt-4 block text-white">Nome: <%- dog.name %></strong>
-          <p class="text-white"><%- dog.age %></p>
-          <a
-            class="block pb-4 text-white"
-            href="https://api.whatsapp.com/send?phone=55<%- dog.phone %>"
+        <div>
+          <img src="<%- dog.photo %>" alt="<%- dog.name %>" />
+          <strong>Nome: <%- dog.name %></strong>
+          <p><%- dog.age %></p>
+          <a href="https://api.whatsapp.com/send?phone=55<%- dog.phone %>"
             >Telefone do doador: <%- dog.phone %></a
           >
         </div>

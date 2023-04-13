@@ -2,37 +2,64 @@
 <html lang="pt-br">
   <%- include('../partials/head') %>
 
-  <body class="flex h-screen flex-col text-gray-800">
+  <body class="flex h-screen flex-col">
     <%- include('../partials/header') %>
 
-    <main class="mx-auto mt-52 flex w-11/12 max-w-6xl flex-1 justify-between">
-      <section id="section-text" class="max-w-lg">
-        <h1 class="mb-4 text-3xl font-bold text-green-500">
-          Bem-vindo ao "Cãopanheiro"!
-        </h1>
+    <main class="mt-20 h-auto flex-1">
+      <section class="bg-blue-200">
+        <div class="mx-auto flex h-auto w-11/12 max-w-6xl py-24">
+          <div>
+            <h1 class="mb-4 max-w-lg text-3xl font-bold text-blue-500">
+              Bem-vindo ao "CãoPanheiro"!
+            </h1>
 
-        <p class="mb-4 font-bold opacity-90">
-          Nosso site é um espaço dedicado à adoção de cachorros, com o objetivo
-          de promover a adoção responsável e ajudar animais de estimação que
-          precisam de um novo lar.
-        </p>
+            <p class="mt-5 max-w-3xl text-gray-800">
+              Nosso site é um espaço dedicado à adoção de cachorros, com o
+              objetivo de promover a adoção responsável e ajudar animais de
+              estimação que precisam de um novo lar.
+            </p>
 
-        <p class="text-lg font-light opacity-90">
-          Aqui você encontrará diversos cães que foram resgatados das ruas ou
-          que precisaram ser doados por seus tutores anteriores, e que estão
-          esperando por uma nova família amorosa e comprometida.
-        </p>
+            <p class="mt-5 max-w-3xl text-gray-800">
+              Aqui você encontrará diversos cães que foram resgatados das ruas
+              ou que precisaram ser doados por seus tutores anteriores, e que
+              estão esperando por uma nova família amorosa e comprometida.
+            </p>
 
-        <div class="mt-4 flex items-center gap-1">
-          <a class="text-lg font-bold text-green-500" href="/adotar"
-            >Conheçam os doguinhos</a
-          >
-          <i class="ph ph-arrow-right text-2xl font-bold"></i>
+            <div class="mt-5 flex items-center gap-2">
+              <a class="text-lg text-blue-500" href="/adotar"
+                >Conheçam os doguinhos</a
+              >
+              <i class="ph ph-arrow-right text-2xl text-blue-500"></i>
+            </div>
+          </div>
+
+          <div class="-mt-32">
+            <img class="h-550px w-420px" src="/assets/image-3.svg" alt="" />
+          </div>
         </div>
       </section>
 
-      <section id="section-image" class="-mt-20">
-        <img class="w-500px" src="/assets/image-3.svg" alt="" />
+      <section
+        class="mx-auto -mt-24 flex h-48 w-11/12 max-w-6xl items-center justify-center rounded-3xl bg-blue-300"
+      >
+        <div
+          class="mr-20 flex flex-col items-center gap-1 border-r border-blue-800 pr-20"
+        >
+          <strong class="text-5xl text-gray-800">+250</strong>
+          <span class="text-base text-blue-800">Doações</span>
+        </div>
+        <div
+          class="mr-20 flex flex-col items-center gap-1 border-r border-blue-800 pr-20"
+        >
+          <strong class="text-5xl text-gray-800">+90</strong>
+          <span class="text-base text-blue-800">Cãozinhos resgatados</span>
+        </div>
+        <div class="mr-5 flex flex-col items-center">
+          <strong class="text-5xl text-gray-800">+40</strong>
+          <span class="text-base text-blue-800"
+            >Cãozinhos esperando um lar</span
+          >
+        </div>
       </section>
     </main>
 

@@ -1,64 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <%- include('../partials/head') %>
-  <body class="flex h-screen flex-col">
+  <body>
     <%- include('../partials/header') %>
-    <main class="mt-30 relative flex-1">
-      <img
-        class="absolute inset-0 h-full w-full object-cover object-top"
-        src="/assets/image4.jpg"
-        alt="Imagem de uma cachorrinha"
-      />
+    <main>
+      <img src="/assets/image4.jpg" alt="Imagem de uma cachorrinha" />
 
-      <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+      <div></div>
 
-      <div
-        class="absolute z-10 m-auto flex h-full w-full flex-col items-center justify-center"
-      >
-        <h1 class="mt-16 text-center text-lg font-bold text-green-500">
-          Preencha dados do Cãozinho para adoção
-        </h1>
-        <form
-          action="/salvo"
-          method="post"
-          class="flex w-2/6 flex-col rounded-md bg-white bg-opacity-40 p-4 shadow-md"
-        >
-          <label class="mt-4 text-gray-900 opacity-70" for="name">Nome</label>
-          <input
-            class="rounded p-3 opacity-40"
-            type="text"
-            name="name"
-            placeholder="Nome do cãozinho"
-          />
-          <label class="mt-4 text-gray-900 opacity-70" for="age">Idade</label>
-          <input
-            class="rounded p-3 opacity-40"
-            type="text"
-            name="age"
-            placeholder="1 ano e dois meses"
-          />
-          <label class="mt-4 text-gray-900 opacity-70" for="photo">Foto</label>
-          <input
-            class="rounded p-3 opacity-40"
-            type="url"
-            name="photo"
-            placeholder="https://"
-          />
-          <label class="mt-4 text-gray-900 opacity-70" for="photo"
-            >Telefone</label
-          >
-          <input
-            class="rounded p-3 opacity-40"
-            type="tel"
-            name="phone"
-            placeholder="(ddd)988888888"
-          />
-          <button
-            class="mt-4 h-9 w-36 rounded-md bg-green-500 text-white hover:bg-green-600"
-            type="submit"
-          >
-            Enviar
-          </button>
+      <div>
+        <h1>Preencha dados do Cãozinho para adoção</h1>
+        <form action="/salvo" method="post">
+          <label for="name">Nome</label>
+          <input type="text" name="name" placeholder="Nome do cãozinho" />
+          <label for="age">Idade</label>
+          <input type="text" name="age" placeholder="1 ano e dois meses" />
+          <label for="photo">Foto</label>
+          <input type="url" name="photo" placeholder="https://" />
+          <label for="photo">Telefone</label>
+          <input type="tel" name="phone" placeholder="(ddd)988888888" />
+          <button type="submit">Enviar</button>
         </form>
       </div>
     </main>
