@@ -4,17 +4,27 @@
   <body class="flex h-screen flex-col">
     <%- include('../partials/header') %>
 
-    <main>
-      <h1>Escolha seu melhor amigo 🐶</h1>
+    <main class="mx-auto mt-32 h-auto w-11/12 max-w-6xl flex-1">
+      <h1 class="mb-4 text-3xl font-bold text-blue-500">
+        Escolha seu melhor amigo 🐶
+      </h1>
 
-      <div>
+      <div class="grid grid-cols-4 gap-10">
         <% dogs.forEach(dog => { %>
-        <div>
-          <img src="<%- dog.photo %>" alt="<%- dog.name %>" />
-          <strong>Nome: <%- dog.name %></strong>
-          <p><%- dog.age %></p>
-          <a href="https://api.whatsapp.com/send?phone=55<%- dog.phone %>"
-            >Telefone do doador: <%- dog.phone %></a
+        <div class="mt-32 rounded-lg bg-blue-500 p-4 shadow-xl">
+          <img
+            class="-mt-16 h-32 w-32 rounded-full border-4 border-blue-300 object-cover"
+            src="<%- dog.photo %>"
+            alt="<%- dog.name %>"
+          />
+          <strong class="my-2 block text-gray-300"
+            >Nome: <%- dog.name %></strong
+          >
+          <p class="mb-2 text-gray-300"><%- dog.age %></p>
+          <a
+            class="text-sm font-bold text-gray-300 hover:text-green-400"
+            href="https://api.whatsapp.com/send?phone=55<%- dog.phone %>"
+            >Contato: <%- dog.phone %></a
           >
         </div>
         <% }) %>

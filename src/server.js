@@ -24,6 +24,8 @@ app.get("/doacao", (req, res) => {
   res.render("donation")
 })
 
+// app.get("/salvo", (req, res) => res.render("saveDog"))
+
 app.post("/salvo", (req, res) => {
   // create table
   db.run(`CREATE TABLE IF NOT EXISTS dogs (

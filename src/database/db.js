@@ -40,7 +40,7 @@ db.serialize(() => {
     console.log("Lista de cãozinhos:", rows)
   })
   // delete dados
-  db.run(`DELETE FROM dogs WHERE id=?`, [2], function (error) {
+  db.run(`DELETE FROM dogs WHERE id=?`, [10], function (error) {
     if (error) {
       console.log("Erro:", error)
     }

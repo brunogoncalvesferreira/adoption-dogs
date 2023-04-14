@@ -3,25 +3,73 @@
   <%- include('../partials/head') %>
   <body>
     <%- include('../partials/header') %>
-    <main>
-      <img src="/assets/image4.jpg" alt="Imagem de uma cachorrinha" />
+    <main class="mx-auto mt-32 h-auto w-11/12 max-w-6xl flex-1">
+      <section class="flex h-auto items-center justify-evenly gap-32">
+        <div class="relative">
+          <div
+            class="after::content=[''] after:absolute after:right-20 after:top-0 after:-z-10 after:mt-5 after:h-80 after:w-full after:rounded-2xl after:bg-blue-300"
+          >
+            <img
+              class="mt-24 w-96 rounded-2xl"
+              src="/assets/image5.jpg"
+              alt="Imagem de uma cachorrinha"
+            />
+          </div>
+        </div>
 
-      <div></div>
+        <div class="mt-10">
+          <h1 class="max-w-lg text-center text-3xl font-bold text-blue-500">
+            Preencha dados do Cãozinho para adoção
+          </h1>
+          <form
+            class="flex flex-col"
+            action="/salvo"
+            method="post"
+            autocomplete="off"
+          >
+            <label class="mb-2 text-lg text-gray-500" for="name">Nome</label>
+            <input
+              class="mb-4 border-b border-gray-500 text-gray-500 outline-none"
+              type="text"
+              name="name"
+              placeholder="Nome do cãozinho"
+            />
 
-      <div>
-        <h1>Preencha dados do Cãozinho para adoção</h1>
-        <form action="/salvo" method="post">
-          <label for="name">Nome</label>
-          <input type="text" name="name" placeholder="Nome do cãozinho" />
-          <label for="age">Idade</label>
-          <input type="text" name="age" placeholder="1 ano e dois meses" />
-          <label for="photo">Foto</label>
-          <input type="url" name="photo" placeholder="https://" />
-          <label for="photo">Telefone</label>
-          <input type="tel" name="phone" placeholder="(ddd)988888888" />
-          <button type="submit">Enviar</button>
-        </form>
-      </div>
+            <label class="mb-2 text-lg text-gray-500" for="age">Idade</label>
+            <input
+              class="mb-4 border-b border-gray-500 text-gray-500 outline-none"
+              type="text"
+              name="age"
+              placeholder="1 ano e dois meses"
+            />
+
+            <label class="mb-2 text-lg text-gray-500" for="photo">Foto</label>
+            <input
+              class="mb-4 border-b border-gray-500 text-gray-500 outline-none"
+              type="url"
+              name="photo"
+              placeholder="https://"
+            />
+
+            <label class="mb-2 text-lg text-gray-500" for="photo"
+              >Telefone</label
+            >
+            <input
+              class="mb-4 border-b border-gray-500 text-gray-500 outline-none"
+              type="tel"
+              name="phone"
+              placeholder="(ddd)988888888"
+            />
+
+            <button
+              class="h-12 w-40 rounded-lg bg-blue-500 font-bold text-gray-200 hover:bg-blue-700"
+              type="submit"
+            >
+              Enviar
+            </button>
+          </form>
+        </div>
+      </section>
     </main>
     <%- include('../partials/footer') %>
   </body>

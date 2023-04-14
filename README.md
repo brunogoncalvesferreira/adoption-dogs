@@ -20,8 +20,11 @@ Projeto para ajudar cãozinhos abandonados ou cãozinhos que precisam de um novo
 ## 🌄 Layout
 
 <div>
-<img width="100%" src=".github/web1.png" alt="Imagem do projeto Web" title="Projeto Web"/>
-<img width="100%" src=".github/web2.png" alt="Imagem do projeto Web" title="Projeto Web"/>
+<img width="100%" src=".github/home.png" alt="Imagem do projeto Web" title="Projeto Web"/>
+<img width="100%" src=".github/sobre.png" alt="Imagem do projeto Web" title="Projeto Web"/>
+<img width="100%" src=".github/doacao.png" alt="Imagem do projeto Web" title="Projeto Web"/>
+<img width="100%" src=".github/adotar.png" alt="Imagem do projeto Web" title="Projeto Web"/>
+
 </div>
 
 ## 🎬 Demonstração
