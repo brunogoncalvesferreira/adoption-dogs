@@ -27,10 +27,6 @@ Projeto para ajudar cãozinhos abandonados ou cãozinhos que precisam de um novo
 
 </div>
 
-## 🎬 Demonstração
-
-- [Link demonstração]()
-
 ## 📱 Funcionalidades
 
 - [x] Cadastramento de cães para doação
