@@ -66,5 +66,5 @@ app.get("/adotar", (req, res) => {
   })
 })
 
-app.listen(3000)
-console.log("Servidor rodando na port 3000...")
+app.listen(8080, () => console.log("Servidor iniciado..."))
+
