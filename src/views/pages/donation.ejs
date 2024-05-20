@@ -27,20 +27,28 @@
             method="post"
             autocomplete="off"
           >
+            <label class="mb-2 text-lg text-gray-500" for="baia">Nº da baia</label>
+            <input
+              class="mb-4 border-b border-gray-500 text-gray-500 outline-none"
+              type="text"
+              name="baia"
+              placeholder="Digite o nº da baia"
+            />
+
             <label class="mb-2 text-lg text-gray-500" for="name">Nome</label>
             <input
               class="mb-4 border-b border-gray-500 text-gray-500 outline-none"
               type="text"
               name="name"
-              placeholder="Nome do cãozinho"
+              placeholder="Digite o nome"
             />
 
-            <label class="mb-2 text-lg text-gray-500" for="age">Idade</label>
+            <label class="mb-2 text-lg text-gray-500" for="chip">Chip</label>
             <input
               class="mb-4 border-b border-gray-500 text-gray-500 outline-none"
               type="text"
-              name="age"
-              placeholder="1 ano e dois meses"
+              name="chip"
+              placeholder="Digite o nº do chip"
             />
 
             <label class="mb-2 text-lg text-gray-500" for="photo">Foto</label>
@@ -58,8 +66,15 @@
               class="mb-4 border-b border-gray-500 text-gray-500 outline-none"
               type="tel"
               name="phone"
-              placeholder="(ddd)988888888"
+              placeholder="(51) 99999-9999"
             />
+
+            <label for="">Situação</label>
+            <select name="" id="">
+              <option value="">Selecione</option>
+              <option value="tutor">Esperando pelo tutor</option>
+              <option value="adocao">Aguardando por adoção</option>
+            </select>
 
             <button
               class="h-12 w-40 rounded-lg bg-blue-500 font-bold text-gray-200 hover:bg-blue-700"
