@@ -29,7 +29,6 @@ export class DogsController {
       if(error) {
         return console.log("Erro:", error)
       } else {
-        console.log('Cãozinhos:', rows)
         return res.render("toAdopt", { dogs: rows })
       }
     })
