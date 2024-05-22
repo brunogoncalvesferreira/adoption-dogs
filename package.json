@@ -1,10 +1,11 @@
 {
   "name": "hound-dog",
+  "type": "module",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon src/server.js"
+    "start": "node --watch ./src/server.js"
   },
   "keywords": [],
   "author": "",
@@ -17,7 +18,6 @@
   "dependencies": {
     "ejs": "^3.1.9",
     "express": "^4.18.2",
-    "nodemon": "^1.19.4",
     "sqlite3": "^5.1.6"
   }
 }
