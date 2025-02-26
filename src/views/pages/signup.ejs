@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <%- include('../partials/head') %>
+  <body>
+    <div>
+        <h2>Crie sua conta</h2>
+        <form action="/signup" method="post" autocomplete="off">
+          <label  for="baia">Nome</label>
+          <input type="text" name="name" placeholder="Digite o nome" />
+   
+          <label for="name">E-email</label>
+          <input type="text" name="email" placeholder="Digite o e-mail" />
+          <label for="name">Password</label>
+          <input type="password" name="password" placeholder="Crie uma senha" />
+          <button type="submit">Enviar</button>
+        </form>
+    </div>
+  </body>
+</html>

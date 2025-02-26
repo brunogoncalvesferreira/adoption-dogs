@@ -1,20 +1,25 @@
-import { Router } from "express";
-import { DogsController } from "../controller/dogs-controller.js";
-import { ViewsController } from "../controller/views.controller.js";
+const { Router } = require("express")
+const  DogsController  = require("../controller/dogs-controller.js")
+const  UserController  = require("../controller/user-controller.js")
+const  SessionsController  = require("../controller/sessions-controller.js")
+const ensureAuthenticate = require("../middlewares/ensureAuthenticate.js")
 
-export const routes = Router()
+const routes = Router()
 
-const dog = new DogsController()
-const view = new ViewsController()
+const dogController = new DogsController()
+const userController = new UserController()
 
-routes.post('/dogs', dog.create)
-routes.get('/adotar', dog.list)
+const sessionController = new SessionsController()
 
-/* routes.put('/')
 
-routes.delete('/') */
+// Dog Routes
+routes.post('/dog', ensureAuthenticate, dogController.create)
+routes.get('/dog', ensureAuthenticate, dogController.list)
 
-// Views Routes
-routes.get('/', view.index)
-routes.get('/sobre', view.about)
-routes.get('/doacao', view.donation)
+// User Routes
+routes.post('/users', userController.create)
+
+// Sessions Routes
+routes.post('/sessions', sessionController.create)
+
+module.exports = routes

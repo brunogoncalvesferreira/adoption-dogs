@@ -1,6 +1,6 @@
-import { db } from "../database/db.js";
+const db = require('../database/db')
 
-export class DogsController {
+class DogsController {
   async create (req, res) {
     try {
       const { name, age, phone, photo } = req.body
@@ -13,7 +13,7 @@ export class DogsController {
           console.log("Erro:", error)
         }
         console.log("Cãozinho cadastrado com sucesso...")
-        res.render("saveDog", { saved: true })
+        return  res.status(201).json({ message: "Cãozinho cadastrado com sucesso!" })
       }
 
       db.run(query, values, insertDogsTable)
@@ -29,7 +29,7 @@ export class DogsController {
       if(error) {
         return console.log("Erro:", error)
       } else {
-        return res.render("toAdopt", { dogs: rows })
+        return res.json(rows)
       }
     })
   }
@@ -38,3 +38,5 @@ export class DogsController {
 
   async delete(req, res) {}
 }
+
+module.exports = DogsController
